@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            margin: 100px auto;
+            width: 448px;
+            height: 252px;
+            background: url(./media/tudou.jpg);
+        }
+
+        .box::after {
+            /* display: block; */
+            content: '';
+            width: 448px;
+            height: 252px;
+            display: none;
+            /* background-color: rgba(0, 0, 0, 0.3); */
+            background: rgba(0, 0, 0, .4) url(./media/arr.png) no-repeat center;
+        }
+
+        .box:hover::after {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+    </div>
+</body>
+
+</html>
